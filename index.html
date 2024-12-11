@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fb URL To UID</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Facebook URL To UID Extractor</h1>
+        <div class="form-group">
+            <label for="profileInput">Enter Facebook Profile Link:</label>
+            <!-- আইডি সংশোধন করা হয়েছে -->
+            <input type="text" id="profileInput" placeholder="Paste your Facebook profile link here...">
+        </div>
+        <button class="btn" onclick="extractUID(this)">Extract UID</button>
+        <div class="form-group">
+            <label for="output">Extracted UID:</label>
+            <input type="text" id="output" readonly placeholder="Your UID will appear here...">
+        </div>
+        <button class="btn" onclick="copyToClipboard(this)">Copy UID</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
